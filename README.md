@@ -1,6 +1,7 @@
 # Typescript Template
 
-- Linter 
-- Typescript
-- Ts Conf
-- Env
+- linter 
+- typescript
+- tsconfig.json
+- env
+- sequelize (pgstore)
