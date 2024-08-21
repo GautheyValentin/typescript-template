@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+  database:
+    image: postgres
+    volumes:
+       - database:/data/postgres
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASS:-postgres}
+      PGDATA: /data/postgres
+    ports:
+      - "5432:5432"
+    command: -c 'max_connections=200'
+
+volumes:
+    database:
