@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@prisma/client": "^5.18.0",
+    "@types/got": "^9.6.12",
     "dotenv": "^16.4.5",
     "fastify": "^4.28.1",
     "got": "^14.4.2",

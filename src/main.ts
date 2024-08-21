@@ -1,9 +1,12 @@
 import Config from '@shared/config';
+import { errorHandler } from '@shared/errorHandler';
 import Fastify from 'fastify';
 
 const fastify = Fastify({
   logger: true,
 });
+
+fastify.setErrorHandler(errorHandler);
 
 fastify.register(import('./hello/hello.router'));
 
